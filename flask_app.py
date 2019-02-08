@@ -11,6 +11,9 @@ from flask import jsonify
 
 import grove_2smpb_02e
 
+BLUETOOTH_DEVICEID = os.environ.get('BLUETOOTH_DEVICEID', 0)
+BLUETOOTH_DEVICE_ADDRESS = os.environ.get('BLUETOOTH_DEVICE_ADDRESS', None)
+
 sensor = grove_2smpb_02e.Grove2smpd02e()
 app = Flask(__name__)
 
