@@ -45,7 +45,7 @@ Highcharts.chart('chart', {
   
         for (i=-99; i<=0; i+=1) {
           data.push({
-            x: time + i * 10000,
+            x: time + i * 1000,
             y: undefined
           });
         }
