@@ -21,7 +21,7 @@ Highcharts.chart('chart', {
                 }
                 series.addPoint([x, py], true, true);
               });
-          }, 10000);
+          }, 3000);
         } 
       }
     },
@@ -45,7 +45,7 @@ Highcharts.chart('chart', {
   
         for (i=-99; i<=0; i+=1) {
           data.push({
-            x: time + i * 1000,
+            x: time + i * 10000,
             y: undefined
           });
         }
